@@ -2,6 +2,7 @@ function editNav() {
 	var x = document.getElementById("myTopnav");
 	if (x.className === "topnav") {
 		x.className += " responsive";
+		
 	} else {
 		x.className = "topnav";
 	}
@@ -20,15 +21,16 @@ function launchModal() {
 function closeModal() {
 	const modalbg = document.querySelector(".bground");
 	modalbg.style.display = "none";
-}
+	
 
+}
 //fonction point d'entrée de l'application
 function main() {
 	init_event();
 }
 
 //Initialisation des événements de la modal
-function init_event() {
+function init_event()   {
 	const modalBtn = document.querySelectorAll(".modal-btn");
 	const modalCloseBtn = document.querySelectorAll(".close");
 
@@ -41,6 +43,12 @@ function init_event() {
 }
 
 main();
+//validation inscription
+const submit = document.querySelectorAll(".btn-submit");
+const confirm = document.querySelectorAll(".confim-modal")
+if(submit=== confirm){
+	modalbg.style.display = "block";
+}
 
 
 
