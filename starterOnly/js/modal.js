@@ -43,12 +43,16 @@ function init_event()   {
 }
 
 main();
+
 //validation inscription
+
+function validation () {
 const submit = document.querySelectorAll(".btn-submit");
 const confirm = document.querySelectorAll(".confim-modal")
-if(submit=== confirm){
-	modalbg.style.display = "block";
+const message = document.querySelectorAll(".message")
+
 }
+
 
 
 
