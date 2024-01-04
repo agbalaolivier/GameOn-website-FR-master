@@ -46,11 +46,16 @@ main();
 
 //validation inscription
 
-function validation () {
-const submit = document.querySelectorAll(".btn-submit");
-const confirm = document.querySelectorAll(".confim-modal")
-const message = document.querySelectorAll(".message")
+function validation (){
+	let inscription = checkForm()
+	if (inscription === true){
+		let confirm = document.querySelector(".confirm-modal");
+		confirm.style.display = "block";
 
+
+	}
+	
+	
 }
 
 
